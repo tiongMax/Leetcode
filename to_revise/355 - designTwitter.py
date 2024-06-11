@@ -1,3 +1,5 @@
+from collections import defaultdict, List, heapq
+
 class Twitter:
 
     def __init__(self):
