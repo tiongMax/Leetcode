@@ -37,14 +37,20 @@ class Solution:
         a, b = UnionFind(n), UnionFind(n)
         res = 0
 
+        # Filling in the type 3 edges first is important. Consider two nodes 
+        # connect by 3 different type of edges, filling the type 3 will result 
+        # in a redundant of 2 edges while filling in any of the other will 
+        # only result in 1.
         for t, s, d in edges:
             s -= 1
             d -= 1
             if t == 3:
-                if not a.union(s, d):
+                # When both of them fail, it means that there is a redundant
+                # edge in both a set and b set. Since we are currently 
+                # filling in type 3 edges, when 1 of the set has redundant
+                # edge, the other will DEFINITELY have.
+                if not a.union(s, d) or not b.union(s, d):
                     res += 1
-                else:
-                    b.union(s, d)
 
         for t, s, d in edges:
             s -= 1
