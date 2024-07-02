@@ -1,7 +1,8 @@
+# https://leetcode.com/problems/find-median-from-data-stream/
+
 import heapq
 
 class MedianFinder:
-
     def __init__(self):
         self.leftHalf = []
         self.rightHalf = []
@@ -23,9 +24,3 @@ class MedianFinder:
         elif len(self.rightHalf) > len(self.leftHalf):
             return self.rightHalf[0]
         return (-self.leftHalf[0] + self.rightHalf[0]) / 2
-
-
-# Your MedianFinder object will be instantiated and called as such:
-# obj = MedianFinder()
-# obj.addNum(num)
-# param_2 = obj.findMedian()
