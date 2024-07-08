@@ -2,6 +2,29 @@
 
 from typing import List
 
+## Approach 1: Dp
+# 1/ 0 knapsack
+class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        total = sum(nums)
+        if total % 2 != 0:
+            return False
+        
+        target = total // 2
+        n = len(nums)
+        
+        dp = [False] * (target + 1)
+        dp[0] = True # It is true that we can have a partition of sum 0 if we have nothing in the partition.
+        
+        for num in nums:
+            temp_dp = dp[:]
+            for j in range(num, target + 1):
+                temp_dp[j] = dp[j] or dp[j - num]
+            dp = temp_dp
+        
+        return dp[target]
+
+
 # Neetcode's
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
@@ -43,6 +66,40 @@ class Solution:
             dp = next_dp
 
         return False 
+    
+## Approach 2: Memo (MLE)
+class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        total = sum(nums)
+        if total % 2 != 0:
+            return False
+        
+        target = total // 2
+        memo = {}
+        
+        def can_partition(index, current_sum):
+            if current_sum == target:
+                return True
+            if current_sum > target or index >= len(nums):
+                return False
+            if (index, current_sum) in memo:
+                return memo[(index, current_sum)]
+            
+            # Include the current number in the partition
+            include = can_partition(index + 1, current_sum + nums[index])
+            # Exclude the current number from the partition
+            exclude = can_partition(index + 1, current_sum)
+            
+            memo[(index, current_sum)] = include or exclude
+            return memo[(index, current_sum)]
+        
+        return can_partition(0, 0)
+
+# Example usage:
+# sol = Solution()
+# print(sol.canPartition([1, 5, 11, 5]))  # Output: True
+# print(sol.canPartition([1, 2, 3, 5]))   # Output: False
+
     
 """
 To check if 2 subsets have equal sum, we can take the sum of the array and divide by 2. So, if the sum
