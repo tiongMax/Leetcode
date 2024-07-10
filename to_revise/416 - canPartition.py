@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/partition-equal-subset-sum/
 
 from typing import List
+from collections import defaultdict
 
 ## Approach 1: Dp
 # 1/ 0 knapsack
@@ -67,38 +68,29 @@ class Solution:
 
         return False 
     
-## Approach 2: Memo (MLE)
+## Approach 2: Memo 
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
         total = sum(nums)
-        if total % 2 != 0:
+        if total % 2 == 0:
+            target = total / 2
+        else:
             return False
-        
-        target = total // 2
-        memo = {}
-        
-        def can_partition(index, current_sum):
-            if current_sum == target:
-                return True
-            if current_sum > target or index >= len(nums):
-                return False
-            if (index, current_sum) in memo:
-                return memo[(index, current_sum)]
-            
-            # Include the current number in the partition
-            include = can_partition(index + 1, current_sum + nums[index])
-            # Exclude the current number from the partition
-            exclude = can_partition(index + 1, current_sum)
-            
-            memo[(index, current_sum)] = include or exclude
-            return memo[(index, current_sum)]
-        
-        return can_partition(0, 0)
 
-# Example usage:
-# sol = Solution()
-# print(sol.canPartition([1, 5, 11, 5]))  # Output: True
-# print(sol.canPartition([1, 2, 3, 5]))   # Output: False
+        dp = defaultdict(int)
+
+        def memo(i, t):
+            if i == len(nums) or t > target:
+                return False
+            if t == target:
+                return True
+            if (i, t) in dp:
+                return dp[(i, t)]
+
+            dp[(i, t)] = memo(i + 1, t + nums[i]) or memo(i + 1, t)
+            return dp[(i, t)]
+
+        return memo(0, 0)
 
     
 """
