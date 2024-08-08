@@ -59,7 +59,7 @@ class Solution:
         while num:
             digits = num % 1000
             s = get_string(digits) 
-            if s: # Should add anything for s = "" (000)
+            if s: # Shouldn't add anything for s = "" (000)
                 res.append(s + postfix[i])
             num = num // 1000
             i += 1
