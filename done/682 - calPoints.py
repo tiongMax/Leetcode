@@ -4,15 +4,20 @@ from typing import List
 
 class Solution:
     def calPoints(self, operations: List[str]) -> int:
+        res = 0
         stack = []
         for o in operations:
             if o == '+':
-                stack.append(stack[-1] + stack[-2])
-            elif o == 'D':
-                stack.append(2 * stack[-1])
+                sum = stack[-1] + stack[-2]
+                stack.append(sum)
+                res += sum
             elif o == 'C':
-                stack.pop()
+                res -= stack.pop()
+            elif o == 'D':
+                double = stack[-1] * 2
+                stack.append(double)
+                res += double
             else:
+                res += int(o)
                 stack.append(int(o))
-
-        return sum(stack)
+        return res                
