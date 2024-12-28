@@ -1,13 +1,14 @@
+# https://leetcode.com/problems/last-stone-weight/
+
+import heapq
+from typing import List
+
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
-        for i in range(len(stones)):
-            stones[i] = -stones[i]
-
-        heapq.heapify(stones)
-        while len(stones) > 1:
-            first = heapq.heappop(stones)
-            second = heapq.heappop(stones)
-            if first < second:
-                heapq.heappush(stones, first - second)
-
-        return -stones[0] if len(stones) == 1 else 0
+        maxHeap = [-s for s in stones]
+        heapq.heapify(maxHeap)
+        while len(maxHeap) > 1:
+            s1, s2 = -heapq.heappop(maxHeap), -heapq.heappop(maxHeap)
+            if s1 > s2:
+                heapq.heappush(maxHeap, -(s1 - s2))
+        return -maxHeap[0] if maxHeap else 0
