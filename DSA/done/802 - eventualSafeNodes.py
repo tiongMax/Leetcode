@@ -4,23 +4,25 @@ from typing import List
 
 class Solution:
     def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
-        visited = {}
+        cycle, visited = set(), set()
+        def dfs(i):
+            if i in visited:
+                return True
+            if i in cycle:
+                return False
 
-        def dfs(node):
-            if node in visited:
-                return visited[node]
-
-            # backtrack and try each node
-            visited[node] = False
-            for n in graph[node]:
+            cycle.add(i)
+            for n in graph[i]:
                 if not dfs(n):
                     return False
-            visited[node] = True
+            cycle.remove(i)
+
+            visited.add(i)
             return True
 
         res = []
-        for n in range(len(graph)):
-            if dfs(n):
-                res.append(n)
+        for i in range(len(graph)):
+            if dfs(i):
+                res.append(i)
 
         return res

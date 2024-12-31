@@ -10,38 +10,24 @@ using namespace std;
 class Solution {
 public:
     const int MOD = 1'000'000'007;
+    unordered_map<int, int> memo;
 
-    int dfs(int i, int low, int high, int zero, int one, unordered_map<int, int>& memo) {
-        // Base case: if i exceeds `high`, no valid strings
+    int dfs(int i, int low, int high, int zero, int one) {
         if (i > high) return 0;
+        if (memo.find(i) != memo.end()) return memo[i];
 
-        // If already calculated, return the memoized result
-        if (memo.find(i) != memo.end()) {
-            return memo[i];
-        }
-
-        // Initialize the result
-        int res = 0;
-
-        // If `i` is within the valid range, count it
-        if (i >= low) {
-            res += 1;
-        }
-
-        // Add results for adding `zero` and `one`
-        res += dfs(i + zero, low, high, zero, one, memo);
+        int res = (i >= low) ? 1 : 0;
+        res += dfs(i + zero, low, high, zero, one);
         res %= MOD;
-        res += dfs(i + one, low, high, zero, one, memo);
+        res += dfs(i + one, low, high, zero, one);
         res %= MOD;
 
-        // Store result in memo
         memo[i] = res;
         return res;
     }
 
     int countGoodStrings(int low, int high, int zero, int one) {
-        unordered_map<int, int> memo;
-        return dfs(0, low, high, zero, one, memo);
+        return dfs(0, low, high, zero, one);
     }
 };
 
@@ -50,17 +36,11 @@ class Solution {
 public:
     int countGoodStrings(int low, int high, int zero, int one) {
         const int MOD = 1'000'000'007;
-
-        // Initialize dp array with size high + max(zero, one) + 1
         int maxSize = high + max(zero, one) + 1;
         vector<int> dp(maxSize, 0);
 
-        // Reverse iteration from high to 0
         for (int i = high; i >= 0; i--) {
-            // If i >= low, initialize to 1, otherwise 0
             dp[i] = (i < low) ? 0 : 1;
-
-            // Add values from dp[i + zero] and dp[i + one], if within bounds
             if (i + zero < maxSize) {
                 dp[i] += dp[i + zero];
                 dp[i] %= MOD;
@@ -71,7 +51,6 @@ public:
             }
         }
 
-        // Return result at dp[0]
         return dp[0];
     }
 };
