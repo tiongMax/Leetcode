@@ -1,4 +1,4 @@
-### Leetcode tips
+# Leetcode tips and question compilation
 
 ## Topological sort:
 - 207
@@ -7,7 +7,7 @@
 - 2115
 
 ## Graph:
-# matrix:
+### matrix:
 - 130, 417 and 1020 (expand from the border): 
 - Instead of expanding from inside of the board, we can start and expand from outside of the board
 - 994 (multiple entry point bfs): 
