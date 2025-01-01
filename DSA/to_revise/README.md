@@ -1,5 +1,11 @@
 ### Leetcode tips
 
+## Topological sort:
+- 207
+- 210
+- 802
+- 2115
+
 ## Graph:
 # matrix:
 - 130, 417 and 1020 (expand from the border): 
