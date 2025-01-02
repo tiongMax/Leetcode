@@ -1,5 +1,9 @@
 # Leetcode tips and question compilation
 
+## Array:
+### Prefix sum:
+- 2559
+
 ## Graph:
 ### matrix:
 - 130, 417 and 1020 (expand from the border): 
