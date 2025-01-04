@@ -28,4 +28,13 @@
 ### Dfs:
 - 2360
 
-    
+### Bfs:
+- 1091 - The length is only updated after the nodes in the same level are processed, so the a for loop is needed to loop through the nodes in that level.
+
+### In/out degree:
+- 1557
+
+### Dijkstra's / Bellman Ford:
+- 1631
+
+### UnionFind:
