@@ -36,5 +36,6 @@
 
 ### Dijkstra's / Bellman Ford:
 - 1631
+- 1514
 
 ### UnionFind:
