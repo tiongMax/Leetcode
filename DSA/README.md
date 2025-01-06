@@ -14,10 +14,8 @@
   - Instead of expanding from inside of the board, we can start and expand from outside of the board
 - 994 (multiple entry point bfs): 
   - There can be multiple entry point for the traverse (search), we just insert all of them into a queue and do bfs.
-- 1631 and 778 (dijkstra on matrix)
-  - We should update the visited after the node is popped out from the heap instead of before pushing it into the heap. For bfs, we only visit (push and pop) each node once. As for dijkstra, we might visit it more than once to find the shortest path.
 
-### Topological sort:
+### Kahn's / Dfs (Topological sort):
 - 207
 - 210
 - 802
@@ -34,8 +32,14 @@
 ### In/out degree:
 - 1557
 
-### Dijkstra's / Bellman Ford:
-- 1631
+### Dijkstra's / Bellman Ford (SSSP):
+- 743
+- 787
+- 787 
 - 1514
+- 1631
 
 ### UnionFind:
+
+### Prim's / Kruskal (MST):
+- 1584

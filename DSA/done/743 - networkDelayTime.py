@@ -1,29 +1,27 @@
+# https://leetcode.com/problems/network-delay-time/
+
 from typing import List
+from collections import defaultdict
 import heapq
 
 class Solution:
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
-        adjList = {}
-        for i in range(1, n + 1):
-            adjList[i] = []
-
+        graph = defaultdict(list)
         for s, d, w in times:
-            adjList[s].append([d, w])
-            
-        shortest = {}
-        minHeap = [[0, k]]
+            graph[s].append((d, w))
+
+        min_heap = [(0, k)]
+        visited = set()
         t = 0
-        while minHeap:
-            curWeight, curNode = heapq.heappop(minHeap)
-            if curNode in shortest:
+        while min_heap:
+            cur_w, cur_n = heapq.heappop(min_heap)
+            if cur_n in visited:
                 continue
-            shortest[curNode] = curWeight
-            # The last weight popped out will have the greater weight as the dest is the furthest from 
-            # from the source among all other dests.
-            t = curWeight
 
-            for nextNode, nextWeight in adjList[curNode]:
-                if nextNode not in shortest:
-                    heapq.heappush(minHeap,  [curWeight + nextWeight, nextNode])
+            t = cur_w
+            visited.add(cur_n)
+            for nei, weight in graph[cur_n]:
+                if nei not in visited:
+                    heapq.heappush(min_heap, (weight + cur_w, nei))
 
-        return t if len(shortest) == n else -1
+        return t if len(visited) == n else -1

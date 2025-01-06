@@ -1,32 +1,26 @@
 # https://leetcode.com/problems/path-with-maximum-probability/
 
 from typing import List
+from collections import defaultdict
 import heapq
 
 class Solution:
-    def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], 
-        start_node: int, end_node: int) -> float:
-        adj = {}
-        for i in range(n):
-            adj[i] = []
+    def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start_node: int, end_node: int) -> float:
+        graph = defaultdict(list)
+        for i, (a, b) in enumerate(edges):
+            graph[a].append((b, succProb[i]))
+            graph[b].append((a, succProb[i]))
 
-        for i in range(len(edges)):
-            s = edges[i][0]
-            d = edges[i][1]
-            w = succProb[i]
-            adj[s].append([d, w])
-            adj[d].append([s, w])
-
-        maxHeap = [[-1, start_node]]
+        max_heap = [(-1, start_node)]
         visited = set()
-        while maxHeap:
-            curProb, curNode = heapq.heappop(maxHeap)
-            visited.add(curNode)
-            if curNode == end_node:
-                return -curProb
+        while max_heap:
+            cur_prob, cur_node = heapq.heappop(max_heap)
+            if cur_node == end_node:
+                return -cur_prob
 
-            for nextNode, nextProb in adj[curNode]:
-                if nextNode not in visited:
-                    heapq.heappush(maxHeap, [curProb * nextProb, nextNode])
+            visited.add(cur_node)
+            for nei, w in graph[cur_node]:
+                if nei not in visited:
+                    heapq.heappush(max_heap, (cur_prob * w, nei))
 
-        return 0
+        return 0.0
