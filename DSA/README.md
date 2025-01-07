@@ -2,10 +2,8 @@
 
 ## Array:
 ### Prefix sum:
-- 1422 
-  - We can use the total numbers of 0 instead of finding the prefix sum.
-- 2270
-  - We can use sum(nums) instead of find the postfix sum.
+- 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
+- 2270 - We can use sum(nums) instead of find the postfix sum.
 - 2559
 
 ## Graph:
@@ -40,6 +38,9 @@
 - 1631
 
 ### UnionFind:
+- 323
+- 684
+- 721
 
 ### Prim's / Kruskal (MST):
 - 1584
