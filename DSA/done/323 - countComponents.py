@@ -1,4 +1,5 @@
-# https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+# https://neetcode.io/problems/count-connected-components
+# https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
 
 from typing import List
 
@@ -37,6 +38,5 @@ class Solution:
         for n1, n2 in edges:
             uf.union(n1, n2)
         
-        # Find the number of components through the root of each component.
         unique_parents = set(uf.find(i) for i in range(n))
         return len(unique_parents)

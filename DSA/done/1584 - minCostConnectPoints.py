@@ -60,22 +60,20 @@ class UnionFind:
         else:
             self.par[p1] = p2
             self.rank[p2] += 1
+            
         return True
 
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
         minHeap = []
         for i in range(len(points)):
-            for j in range(len(points)):
-                if i == j: 
-                    continue
+            for j in range(i + 1, len(points)):
                 p1, p2 = tuple(points[i]), tuple(points[j])
                 dist = abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
                 heapq.heappush(minHeap, [dist, p1, p2])
 
         uf = UnionFind([tuple(p) for p in points])
-        mst = 0
-        res = 0
+        mst = res = 0
         while mst < len(points) - 1:
             w, s, d = heapq.heappop(minHeap)
             if not uf.union(s, d):
