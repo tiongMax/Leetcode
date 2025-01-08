@@ -6,6 +6,10 @@
 - 2270 - We can use sum(nums) instead of find the postfix sum.
 - 2559
 
+## Tree
+### Trie
+- 3042
+
 ## Graph:
 ### matrix:
 - 130, 417 and 1020 (expand from the border): 
@@ -44,3 +48,21 @@
 
 ### Prim's / Kruskal (MST):
 - 1584
+
+## Dp
+### 1D
+- 91
+- 198
+- 213
+- 746
+-
+
+### Palindromic substring
+
+### 2D
+
+### Grid
+
+### Subsequence
+
+### MCM 
