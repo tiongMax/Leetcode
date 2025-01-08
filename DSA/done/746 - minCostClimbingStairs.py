@@ -2,24 +2,26 @@
 
 from typing import List
 
-# First try
+# Memo
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
-        if len(cost) < 2:
-            return cost[0]
+        dp = {}
+        def dfs(i):
+            if i >= len(cost):
+                return 0
+            if i in dp:
+                return dp[i]
 
-        n1, n2 = cost[-1], 0
-        for i in range(len(cost) - 2, -1, -1):
-            cost[i] += min(n1, n2)
-            n2 = n1
-            n1 = cost[i]
+            dp[i] = cost[i] + min(dfs(i + 1), dfs(i + 2))
+            return dp[i]
+        return min(dfs(0), dfs(1))
 
-        return min(cost[0], cost[1])
-
-# Optimised (Neetcode)
+# Dp
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
-        for i in range(len(cost) - 3, -1, -1):
-            cost[i] += min(cost[i + 1], cost[i + 2])
+        prev1 = prev2 = 0
+        for i in range(len(cost) - 1, -1, -1):
+            tmp = cost[i] + min(prev1, prev2)
+            prev2, prev1 = prev1, tmp
 
-        return min(cost[0], cost[1])
+        return min(prev1, prev2)

@@ -15,7 +15,6 @@ class Trie:
             if c not in cur.children:
                 cur.children[c] = TrieNode()
             cur = cur.children[c]
-
         cur.end = True
 
     def search(self, word: str) -> bool:
@@ -24,7 +23,6 @@ class Trie:
             if c not in cur.children:
                 return False
             cur = cur.children[c]
-        
         return cur.end == True
 
     def startsWith(self, prefix: str) -> bool:
@@ -33,9 +31,8 @@ class Trie:
             if c not in cur.children:
                 return False
             cur = cur.children[c]
-
         return True
-
+    
 
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()

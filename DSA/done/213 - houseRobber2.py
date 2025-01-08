@@ -10,6 +10,5 @@ class Solution:
                 temp = r1 + n
                 r1 = r2
                 r2 = max(temp, r2)
-
             return r2
         return max(nums[0], rob_helper(nums[:-1]), rob_helper(nums[1:]))
