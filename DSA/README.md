@@ -8,7 +8,11 @@
 
 ## Tree
 ### Trie
+- 208
+- 211
+- 2185
 - 3042
+- 3045
 
 ## Graph:
 ### matrix:
@@ -60,6 +64,8 @@
 ### Palindromic substring
 
 ### 2D
+- 494
+- 518 - Can be space optimized as the previous case required are settled beforehand.
 
 ### Grid
 
