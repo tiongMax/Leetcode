@@ -6,6 +6,10 @@
 - 2270 - We can use sum(nums) instead of find the postfix sum.
 - 2559
 
+## String
+- 916 - If the order is not important (unlike substring / subsequence), we can find and compare the 
+occurance of each character instead.
+
 ## Tree
 ### Trie
 - 208
