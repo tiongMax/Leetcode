@@ -7,6 +7,10 @@
 - 2559
 
 ## String
+### Palindrome
+- 1400
+
+### String comparison
 - 916 - If the order is not important (unlike substring / subsequence), we can find and compare the 
 occurance of each character instead.
 
@@ -68,11 +72,13 @@ occurance of each character instead.
 ### Palindromic substring
 
 ### 2D
+- 309
 - 494
 - 518 - Can be space optimized as the previous case required are settled beforehand.
 
 ### Grid
 
 ### Subsequence
+- 1143
 
 ### MCM 
