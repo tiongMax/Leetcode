@@ -10,6 +10,9 @@
 ### Palindrome
 - 1400
 
+## Stack
+- 2116
+
 ### String comparison
 - 916 - If the order is not important (unlike substring / subsequence), we can find and compare the 
 occurance of each character instead.
