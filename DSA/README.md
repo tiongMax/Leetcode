@@ -5,6 +5,7 @@
 - 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
 - 2270 - We can use sum(nums) instead of find the postfix sum.
 - 2559
+- 2657 - We can use a variable hold the sum of previous index. 
 
 ## String
 ### Palindrome
