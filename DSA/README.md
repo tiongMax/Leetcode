@@ -86,3 +86,6 @@ occurance of each character instead.
 - 1143
 
 ### MCM 
+
+## Bitwise
+- 2429
