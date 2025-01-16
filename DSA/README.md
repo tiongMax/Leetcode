@@ -88,4 +88,5 @@ occurance of each character instead.
 ### MCM 
 
 ## Bitwise
+- 2425
 - 2429
