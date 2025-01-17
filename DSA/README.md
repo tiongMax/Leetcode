@@ -88,5 +88,7 @@ occurance of each character instead.
 ### MCM 
 
 ## Bitwise
+### XOR   
 - 2425
 - 2429
+- 2683
