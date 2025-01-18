@@ -46,6 +46,7 @@ occurance of each character instead.
 
 ### Bfs:
 - 1091 - The length is only updated after the nodes in the same level are processed, so the a for loop is needed to loop through the nodes in that level.
+- 1368 - Use 0/1 bfs instead
 
 ### In/out degree:
 - 1557
