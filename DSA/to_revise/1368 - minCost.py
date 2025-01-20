@@ -14,7 +14,6 @@ class Solution:
         ROWS, COLS = len(grid), len(grid[0])
         q = deque([(0, 0, 0)])  # r, c, cost
         min_cost = {(0, 0): 0}  # (r, c) -> min cost
-        
         while q:
             r, c, cost = q.popleft()
             if (r, c) == (ROWS - 1, COLS - 1):
