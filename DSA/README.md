@@ -28,11 +28,13 @@ occurance of each character instead.
 - 3045
 
 ## Graph:
-### matrix:
-- 130, 417 and 1020 (expand from the border): 
-  - Instead of expanding from inside of the board, we can start and expand from outside of the board
-- 994 (multiple entry point bfs): 
-  - There can be multiple entry point for the traverse (search), we just insert all of them into a queue and do bfs.
+### Matrix bfs:
+- 130 - (expand from the border)
+- 417 - (expand from the border)
+- 542 - (multiple entry point bfs)
+- 994 - There can be multiple entry point for the traverse (search), we just insert all of them into a queue and do bfs (multiple entry point bfs).
+- 1020 - Instead of expanding from inside of the board, we can start and expand from outside of the board.
+- 1765 - (multiple entry point bfs)
 
 ### Kahn's / Dfs (Topological sort):
 - 207
