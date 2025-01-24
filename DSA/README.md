@@ -34,6 +34,7 @@ occurance of each character instead.
 - 542 - (multiple entry point bfs)
 - 994 - There can be multiple entry point for the traverse (search), we just insert all of them into a queue and do bfs (multiple entry point bfs).
 - 1020 - Instead of expanding from inside of the board, we can start and expand from outside of the board.
+- 1293 - A node can store more information instead of just r, c and cost to reach; We can check the cost before pushing a node to the queue so that there is only 1 node with the same r, c in the queue.
 - 1765 - (multiple entry point bfs)
 
 ### Kahn's / Dfs (Topological sort):
