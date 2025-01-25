@@ -13,7 +13,16 @@
 - 1400
 
 ## Stack
+### Normal stack
 - 2116
+
+### Monotonic stack
+
+## Queue
+### Normal queue
+- 2948 - We can use a list of queue instead of a list of priority queue to maintain the order of each group and get the smallest element from the queue in O(1).
+
+### Monotonic queue
 
 ### String comparison
 - 916 - If the order is not important (unlike substring / subsequence), we can find and compare the 
