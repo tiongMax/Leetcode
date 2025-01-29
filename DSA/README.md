@@ -1,12 +1,19 @@
 # Leetcode tips and question compilation
 
-## Array:
-### Prefix sum:
+## Array
+
+## Prefix sum:
 - 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
 - 2017
 - 2270 - We can use sum(nums) instead of find the postfix sum.
 - 2559
 - 2657 - We can use a variable hold the sum of previous index. 
+
+## Sliding window
+### Fixed
+
+### Variable
+- 76 - Instead of comparing 2 hashtables, we can use a variable to compare if the window matches the target substring
 
 ## String
 ### Palindrome
