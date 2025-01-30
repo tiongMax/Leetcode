@@ -67,6 +67,7 @@ occurance of each character instead.
 
 ### Bfs:
 - 1091 - The length is only updated after the nodes in the same level are processed, so the a for loop is needed to loop through the nodes in that level.
+- 2493 - Bfs + bipartite
 
 ### 0/1 bfs
 - 1293
