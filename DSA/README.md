@@ -53,6 +53,10 @@ occurance of each character instead.
 - 1293 - A node can store more information instead of just r, c and cost to reach; We can check the cost before pushing a node to the queue so that there is only 1 node with the same r, c in the queue.
 - 1765 - (multiple entry point bfs)
 
+### Matrix dfs:
+- 827 - We can precompute the area of the island instead of traversing the island for its area for many times. Instead of flipping the adjacent 0s of an island after traversing the island, we can flip the 0 and check for its adjacent cells.
+- 2658
+
 ### Kahn's / Dfs (Topological sort):
 - 207
 - 210
@@ -62,8 +66,7 @@ occurance of each character instead.
 - 2115
 
 ### Dfs:
-- 2360
-- 2658
+- 2360 - We need 2 hash tables, 1 for visited and the other to keep track the starting node of the cycle.
 
 ### Bfs:
 - 1091 - The length is only updated after the nodes in the same level are processed, so the a for loop is needed to loop through the nodes in that level.
