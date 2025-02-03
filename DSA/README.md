@@ -1,6 +1,8 @@
 # Leetcode tips and question compilation
 
 ## Array
+### Rotated:
+- 1752 - We can loop through the array twice instead of explicitly creating a new array of size 2n.
 
 ## Prefix sum:
 - 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
@@ -14,6 +16,7 @@
 
 ### Variable
 - 76 - Instead of comparing 2 hashtables, we can use a variable to compare if the window matches the target substring
+- 3105 
 
 ## String
 ### Palindrome
