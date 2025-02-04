@@ -16,6 +16,7 @@
 
 ### Variable
 - 76 - Instead of comparing 2 hashtables, we can use a variable to compare if the window matches the target substring
+- 1800
 - 3105 
 
 ## String
