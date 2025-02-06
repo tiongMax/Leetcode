@@ -126,3 +126,6 @@ occurance of each character instead.
 - 2425
 - 2429
 - 2683
+
+## Math
+- 1726
