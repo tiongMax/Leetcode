@@ -128,7 +128,9 @@ occurance of each character instead.
 - 2683
 
 ## Math
+### Count
 - 1726
+- 2364
 
 ## OrderedSet
 - 2349 
