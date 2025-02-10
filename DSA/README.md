@@ -26,6 +26,7 @@
 ## Stack
 ### Normal stack
 - 2116
+- 3174
 
 ### Monotonic stack
 
