@@ -49,6 +49,11 @@ occurance of each character instead.
 - 3042
 - 3045
 
+## Heap
+### Median
+### Normal
+- 2342 - We can pop out whenever the heap's length is > 2 so that the overall time complexity is nlog m instead of n^2log m
+
 ## Graph:
 ### Matrix bfs:
 - 130 - (expand from the border)
