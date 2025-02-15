@@ -60,7 +60,7 @@ occurance of each character instead.
 ### Binary
 
 ### N-nary
-- 2698 
+- 2698 - Similar idea as MCM
 
 ## Graph:
 ### Matrix bfs:
