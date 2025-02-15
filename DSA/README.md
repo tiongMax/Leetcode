@@ -56,6 +56,12 @@ occurance of each character instead.
 - 2342 - We can pop out whenever the heap's length is > 2 so that the overall time complexity is nlog m instead of n^2log m
 - 3066 
 
+## Backtrack
+### Binary
+
+### N-nary
+- 2698 
+
 ## Graph:
 ### Matrix bfs:
 - 130 - (expand from the border)
