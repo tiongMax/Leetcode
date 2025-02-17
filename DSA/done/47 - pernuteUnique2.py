@@ -1,3 +1,8 @@
+# https://leetcode.com/problems/permutations-ii/
+
+from typing import List
+from collections import Counter
+
 # Approach 1: faster
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
@@ -25,7 +30,7 @@ class Solution:
         backTrack()
         return res
                 
-# Approach 2:
+# Approach 2: permutation style
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         perms = [[]]
