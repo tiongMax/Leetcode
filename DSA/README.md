@@ -46,6 +46,9 @@ occurance of each character instead.
 ### Iterative
 - 1028 
 
+### Pre, in, post order
+- 889
+
 ### Trie
 - 208
 - 211
