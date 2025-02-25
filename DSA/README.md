@@ -7,6 +7,7 @@
 ## Prefix sum:
 - 1352 - Prefix product
 - 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
+- 1524 - We can use odd and even to record how many prefix sum (subarray sum until that point) of odd and even value we have. Then, we can deduct them from current sum to count for how many odd subarray sum we have without odd or even.
 - 2017
 - 2270 - We can use sum(nums) instead of find the postfix sum.
 - 2559
