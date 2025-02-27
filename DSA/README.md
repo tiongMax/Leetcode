@@ -149,6 +149,7 @@ occurance of each character instead.
 - 309
 - 494
 - 518 - Can be space optimized as the previous case required are settled beforehand.
+- 873 
 
 ### Grid
 
