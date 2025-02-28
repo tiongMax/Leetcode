@@ -154,6 +154,7 @@ occurance of each character instead.
 ### Grid
 
 ### Subsequence
+- 1092 - We can use the dp table to construct the supersequence.
 - 1143
 
 ### MCM 
