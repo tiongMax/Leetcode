@@ -4,6 +4,9 @@
 ### Rotated:
 - 1752 - We can loop through the array twice instead of explicitly creating a new array of size 2n.
 
+## Two pointers
+- 42
+
 ## Prefix sum:
 - 1352 - Prefix product
 - 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
@@ -169,6 +172,10 @@ occurance of each character instead.
 ### Count
 - 1726
 - 2364
+
+## Fast exponentiation
+- 50 
+- 1922
 
 ## OrderedSet
 - 2349 
