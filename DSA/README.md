@@ -130,6 +130,7 @@ occurance of each character instead.
 - 1514
 - 1631
 - 3341
+- 3342 - Notice that if the sum of x and y coordinates is even then the cost will be 2, else it will be 1 
 
 ### UnionFind:
 - 323
