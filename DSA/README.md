@@ -156,6 +156,9 @@ occurance of each character instead.
 - 518 - Can be space optimized as the previous case required are settled beforehand.
 - 873 
 
+### Unbounded Knapsack
+- 377 (backtrack) 
+
 ### Grid
 
 ### Subsequence
