@@ -19,6 +19,9 @@
 - 1524 - We can use odd and even to record how many prefix sum (subarray sum until that point) of odd and even value we have. Then, we can deduct them from current sum to count for how many odd subarray sum we have without odd or even.
 - 1749 - We can store previous max and min prefix sum instead of loop through the prefix sum array at every new index.
 
+## Difference array
+- 3355
+
 ## Sliding window
 ### Fixed
 
