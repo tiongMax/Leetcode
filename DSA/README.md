@@ -108,6 +108,7 @@ occurance of each character instead.
 - 210
 - 802
 - 1462
+- 1857 - We can use memoization to store the largest color value of the current node.
 - 2050
 - 2115
 
