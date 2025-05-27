@@ -52,6 +52,9 @@
 - 916 - If the order is not important (unlike substring / subsequence), we can find and compare the 
 occurance of each character instead.
 
+## Linked list
+-206
+
 ## Tree
 ### Iterative
 - 1028 
