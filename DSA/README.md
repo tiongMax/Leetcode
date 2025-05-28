@@ -62,6 +62,9 @@ occurance of each character instead.
 ### Pre, in, post order
 - 889
 
+### Dfs
+ - 3372
+ 
 ### Trie
 - 208
 - 211
