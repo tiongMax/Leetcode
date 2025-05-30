@@ -125,7 +125,10 @@ occurance of each character instead.
 - 1091 - The length is only updated after the nodes in the same level are processed, so the a for loop is needed to loop through the nodes in that level.
 - 2493 - Bfs + bipartite
 
-### 0/1 bfs
+### Bfs / Dfs:
+- 2359
+
+### 0/1 bfs:
 - 1293
 - 1368 - Since the cost to reach a node is not monotonic (can decrease instead of just remain and increase), we cannot mark it as visited until the target node is reached or the deque is empty.
 - 2290 - Since the cost to reach a node is monotonic, we can mark it as visited after pushing it to the deque as the cost for any other path to reach this node is either the same or larger. 

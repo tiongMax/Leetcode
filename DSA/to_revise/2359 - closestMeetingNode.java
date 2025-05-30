@@ -3,7 +3,7 @@
 import java.util.Arrays;
 
 class Solution {
-    public void dfs(int node, int[] edges, int[] dist, Boolean[] visit) {
+    public void dfs(int node, int[] edges, int[] dist, boolean[] visit) {
         visit[node] = true;
         int neighbor = edges[node];
         if (neighbor != -1 && !visit[neighbor]) {
@@ -20,9 +20,9 @@ class Solution {
         dist1[node1] = 0;
         dist2[node2] = 0;
 
-        Boolean[] visit1 = new Boolean[n], visit2 = new Boolean[n];
-        Arrays.fill(visit1, Boolean.FALSE);
-        Arrays.fill(visit2, Boolean.FALSE);
+        boolean[] visit1 = new boolean[n], visit2 = new boolean[n];
+        Arrays.fill(visit1, false);
+        Arrays.fill(visit2, false);
 
         dfs(node1, edges, dist1, visit1);
         dfs(node2, edges, dist2, visit2);
