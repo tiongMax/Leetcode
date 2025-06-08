@@ -63,7 +63,8 @@ occurance of each character instead.
 - 889
 
 ### Dfs
- - 3372
+- 386 
+- 3372
  
 ### Trie
 - 208
