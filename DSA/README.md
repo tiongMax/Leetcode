@@ -192,6 +192,9 @@ occurance of each character instead.
 - 1726
 - 2364
 
+### Diagonals
+- 498 - sum of i + j of a cell is the same for the same diagonal line
+
 ## Fast exponentiation
 - 50 
 - 1922
