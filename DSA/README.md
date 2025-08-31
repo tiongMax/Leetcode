@@ -87,6 +87,7 @@ occurance of each character instead.
 - 90
 
 ### N-nary
+- 37
 - 2698 - Similar idea as MCM
 
 ### Permutation
