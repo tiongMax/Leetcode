@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-average-pass-ratio
+
 from typing import List
 import heapq
 

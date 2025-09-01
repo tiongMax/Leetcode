@@ -5,6 +5,7 @@
 - 1752 - We can loop through the array twice instead of explicitly creating a new array of size 2n.
 
 ## Two pointers
+- 11
 - 42
 - 125
 - 167
@@ -43,6 +44,7 @@
 - 3174
 
 ### Monotonic stack
+- 739
 
 ## Queue
 ### Normal queue
