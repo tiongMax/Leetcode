@@ -6,6 +6,8 @@
 
 ## Two pointers
 - 42
+- 125
+- 167
 
 ## Prefix sum:
 - 1352 - Prefix product
@@ -75,9 +77,17 @@ occurance of each character instead.
 
 ## Heap
 ### Median
+
 ### Normal
+- 1792
 - 2342 - We can pop out whenever the heap's length is > 2 so that the overall time complexity is nlog m instead of n^2log m
 - 3066 
+
+## Greedy
+### Heap
+- 1792
+
+### Sort
 
 ## Backtrack    
 ### Binary 
