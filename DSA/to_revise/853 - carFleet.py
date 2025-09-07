@@ -7,9 +7,11 @@ class Solution:
         pair = [(p, s) for p, s in zip(position, speed)]
         pair.sort(reverse=True)
         stack = []
-        for p, s in pair:  # Reverse Sorted Order
-            time_to_reach = (target - p) / s
-            stack.append(time_to_reach)
-            if len(stack) >= 2 and stack[-1] <= stack[-2]:
-                stack.pop()
-        return len(stack)
+        for p, s in pair:
+            cur = (target - p) / s
+            if stack and cur <= stack[-1]:
+                continue
+            else:
+                stack.append(cur)
+        return len(stack) 
+
