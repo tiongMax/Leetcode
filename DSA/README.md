@@ -10,6 +10,10 @@
 - 125
 - 167
 
+## Binary search
+### Lower / upper bound
+- 3508 - We can use hashmap to record the packet that is still in the queue instead of looping through the queue to find them out.
+
 ## Prefix sum:
 - 1352 - Prefix product
 - 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
