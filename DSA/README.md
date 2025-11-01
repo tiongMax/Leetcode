@@ -71,8 +71,17 @@ occurance of each character instead.
 - 889
 
 ### Dfs
+- 100
+- 104
+- 110 - Return a tuple that contains the height of the subtree and if the subtree is balanced
+- 226
 - 386 
+- 543
+- 572
 - 3372
+
+### BST
+- 235
  
 ### Trie
 - 208
