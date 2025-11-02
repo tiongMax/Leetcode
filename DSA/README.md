@@ -70,7 +70,7 @@ occurance of each character instead.
 ### Pre, in, post order
 - 889
 
-### Dfs
+### DFS
 - 100
 - 104
 - 110 - Return a tuple that contains the height of the subtree and if the subtree is balanced
@@ -79,6 +79,10 @@ occurance of each character instead.
 - 543
 - 572
 - 3372
+
+### BFS
+- 102
+- 199
 
 ### BST
 - 235
