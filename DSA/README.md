@@ -6,11 +6,19 @@
 
 ## Two pointers
 - 11
+- 15
 - 42
 - 125
 - 167
 
 ## Binary search
+### Normal
+- 74
+- 704
+
+### Search Range
+- 875 
+
 ### Lower / upper bound
 - 3508 - We can use hashmap to record the packet that is still in the queue instead of looping through the queue to find them out.
 
@@ -43,12 +51,17 @@
 
 ## Stack
 ### Normal stack
+- 20
+- 150
+- 155
 - 1910
 - 2116
 - 3174
 
 ### Monotonic stack
+- 84
 - 739
+- 853
 
 ## Queue
 ### Normal queue
