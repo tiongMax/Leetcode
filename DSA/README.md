@@ -19,6 +19,10 @@
 ### Search Range
 - 875 
 
+### Modified Array
+- 33 - rotated array
+- 153 - rotated array
+
 ### Lower / upper bound
 - 3508 - We can use hashmap to record the packet that is still in the queue instead of looping through the queue to find them out.
 
