@@ -13,6 +13,7 @@
 
 ## Binary search
 ### Normal
+- 34
 - 74
 - 704
 
@@ -22,9 +23,11 @@
 
 ### Modified Array
 - 33 - rotated array
+- 81 - Since we have a way to solve the question that contains no duplicates, we should find and solve the issue that is stopping us to apply the solution.
 - 153 - rotated array
 
 ### Lower / upper bound
+- 35
 - 981
 - 3508 - We can use hashmap to record the packet that is still in the queue instead of looping through the queue to find them out.
 
