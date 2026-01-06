@@ -15,11 +15,15 @@
 ### Normal
 - 34
 - 74
+- 162
+- 540 - Take note on the index of the 2 same value elements before and after the single element
 - 704
 
 ### Search Range
 - 4 - BS on smaller length arr to check on how many elems to be taken from smaller length array to form left partition.
 - 875 
+- 1482
+- 1539
 
 ### Modified Array
 - 33 - rotated array
