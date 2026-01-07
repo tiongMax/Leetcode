@@ -21,7 +21,10 @@
 
 ### Search Range
 - 4 - BS on smaller length arr to check on how many elems to be taken from smaller length array to form left partition.
+- 410 - min max
 - 875 
+- 1011
+- 1283
 - 1482
 - 1539
 
