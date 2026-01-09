@@ -10,8 +10,7 @@ class Solution:
             if (r - l + 1) - maxf > k:
                 hm[ord(s[l]) - ord('A')] -= 1
                 l += 1
-            if (r - l + 1) - maxf <= k:
-                maxl = max(maxl, r - l + 1)
+            maxl = max(maxl, r - l + 1)
             r += 1
 
         return maxl
