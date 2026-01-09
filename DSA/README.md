@@ -16,12 +16,15 @@
 - 34
 - 74
 - 162
+- 240
 - 540 - Take note on the index of the 2 same value elements before and after the single element
 - 704
+- 1901
 
 ### Search Range
 - 4 - BS on smaller length arr to check on how many elems to be taken from smaller length array to form left partition.
 - 410 - min max
+- 774
 - 875 
 - 1011
 - 1283
@@ -57,9 +60,15 @@
 ### Fixed
 
 ### Variable
+- 3
 - 76 - Instead of comparing 2 hashtables, we can use a variable to compare if the window matches the target substring
+- 1004
 - 1800
 - 3105 
+
+### Count all subarray
+- 930
+- 1248
 
 ## String
 ### Palindrome
