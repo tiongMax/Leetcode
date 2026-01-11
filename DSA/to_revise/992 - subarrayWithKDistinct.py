@@ -11,14 +11,12 @@ class Solution:
             result = 0
             
             for right in range(len(nums)):
-                if count[nums[right]] == 0:
-                    k -= 1
                 count[nums[right]] += 1
                 
-                while k < 0:
+                while len(count) > k:
                     count[nums[left]] -= 1
                     if count[nums[left]] == 0:
-                        k += 1
+                        del count[nums[left]]
                     left += 1
                 
                 result += right - left + 1
@@ -26,4 +24,6 @@ class Solution:
             return result
         
         return atMostKDistinct(nums, k) - atMostKDistinct(nums, k - 1)
+
+
 
