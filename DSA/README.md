@@ -58,17 +58,21 @@
 
 ## Sliding window
 ### Fixed
+- 1423
 
 ### Variable
 - 3
 - 76 - Instead of comparing 2 hashtables, we can use a variable to compare if the window matches the target substring
+- 340
 - 1004
 - 1800
 - 3105 
 
 ### Count all subarray
+- 992 
 - 930
 - 1248
+- 1358
 
 ## String
 ### Palindrome
