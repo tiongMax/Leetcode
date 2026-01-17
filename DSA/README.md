@@ -58,12 +58,14 @@
 
 ## Sliding window
 ### Fixed
+- 239
 - 1423
 
 ### Variable
 - 3
 - 76 - Instead of comparing 2 hashtables, we can use a variable to compare if the window matches the target substring
 - 340
+- 567
 - 1004
 - 1800
 - 3105 
