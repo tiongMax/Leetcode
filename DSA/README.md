@@ -105,7 +105,13 @@
 occurance of each character instead.
 
 ## Linked list
--206
+- 206
+- 237
+
+### Cycle
+- 141
+- 142
+- 876
 
 ## Tree
 ### Iterative
