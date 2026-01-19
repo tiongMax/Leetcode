@@ -105,8 +105,11 @@
 occurance of each character instead.
 
 ## Linked list
+- 19
 - 206
 - 237
+- 328
+- 2095
 
 ### Cycle
 - 141
