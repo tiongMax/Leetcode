@@ -105,7 +105,10 @@
 occurance of each character instead.
 
 ## Linked list
+- 2
 - 19
+- 148
+- 160
 - 206
 - 237
 - 328
