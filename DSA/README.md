@@ -1,6 +1,9 @@
 # Leetcode tips and question compilation
 
 ## Array
+### Normal
+- 3010
+
 ### Rotated:
 - 1752 - We can loop through the array twice instead of explicitly creating a new array of size 2n.
 
