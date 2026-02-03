@@ -3,6 +3,7 @@
 ## Array
 ### Normal
 - 3010
+- 3637
 
 ### Rotated:
 - 1752 - We can loop through the array twice instead of explicitly creating a new array of size 2n.
