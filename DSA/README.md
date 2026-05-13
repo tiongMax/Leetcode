@@ -1,6 +1,11 @@
 # Leetcode tips and question compilation
 
 ## Array
+### Hashing
+- 1
+- 217
+- 242 
+
 ### Normal
 - 3010
 - 3637
