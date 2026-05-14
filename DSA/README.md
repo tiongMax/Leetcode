@@ -3,6 +3,8 @@
 ## Array
 ### Hashing
 - 1
+- 36
+- 49 
 - 217
 - 242 
 
@@ -51,6 +53,7 @@
 - 3508 - We can use hashmap to record the packet that is still in the queue instead of looping through the queue to find them out.
 
 ## Prefix sum:
+- 238 - Prefix and postfix product
 - 1352 - Prefix product
 - 1422 - We can use the total numbers of 0 instead of finding the prefix sum.
 - 2017
