@@ -1,0 +1,20 @@
+// https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/
+
+#include <string>
+
+class Solution {
+public:
+    long long sumAndMultiply(int n) {
+        long long x{0};
+        long long sum{0};
+        std::string s{std::to_string(n)};
+        for (char c : s) {
+            int d{c - '0'};
+            sum += d;
+            if (d > 0) {
+                x = x * 10 + d;
+            }
+        }
+        return x * sum;
+    }
+};
