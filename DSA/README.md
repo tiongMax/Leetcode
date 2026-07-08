@@ -215,6 +215,7 @@ Use this section as a quick map when reviewing a topic.
 - 2270 - Use `sum(nums)` instead of building a postfix sum.
 - 2559
 - 2657 - Keep a running value for the previous prefix state.
+- 3756 - Use multiple array to store different prefix state.
 
 ### Counting Subarrays
 
