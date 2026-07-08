@@ -5,8 +5,8 @@ This folder is my personal data structures and algorithms practice hub. It conta
 ## Progress Snapshot
 
 <!-- progress-start -->
-- `done/` - 291 solved solution files
-- `to_revise/` - 145 problems to revisit
+- `done/` - 296 solved solution files
+- `to_revise/` - 152 problems to revisit
 - `to_memorize/` - 8 important patterns or solutions to remember
 <!-- progress-end -->
 
