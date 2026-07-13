@@ -232,6 +232,7 @@ Use this section as a quick map when reviewing a topic.
 
 - 239
 - 1423
+- 1291 - Generate the sol instead of searching.
 
 ### Variable Size
 
