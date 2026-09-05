@@ -217,6 +217,7 @@ Use this section as a quick map when reviewing a topic.
 - 2657 - Keep a running value for the previous prefix state.
 - 3756 - Use multiple array to store different prefix state.
 - 3903 - Use prefix max and suffix min to solve the problem.
+- 3904 - Same as 3903
 
 ### Counting Subarrays
 
